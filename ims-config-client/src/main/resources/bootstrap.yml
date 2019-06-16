@@ -1,0 +1,21 @@
+spring:
+  application:
+    #对应git中的application
+    name: configclient
+  cloud:
+    config:
+      label: master
+      #对应git中的profile
+      profile: dev
+      uri: http://localhost:8888/
+      discovery:
+        enabled: true
+        service-id: config-server
+        #eureka中服务的名字，高可用就是多一两个服务实例
+server:
+  port: 8881
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/

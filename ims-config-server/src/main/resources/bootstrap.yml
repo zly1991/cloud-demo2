@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zly1991/springcloudconfigs-zhou
+          #http://localhost:8888/configclient-dev.yml访问这个地址就可以得到配置信息，configclient是git上的application
+          search-paths:
+          username:
+          password:
+      label: master
+server:
+  port: 8889
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
