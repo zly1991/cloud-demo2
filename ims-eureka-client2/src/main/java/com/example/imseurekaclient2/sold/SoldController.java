@@ -13,4 +13,5 @@ public class SoldController {
     public String sayHiFromSold(){
      return this.soldService.queryClientHi();
     }
+
 }

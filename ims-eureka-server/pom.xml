@@ -7,6 +7,7 @@
         <artifactId>ims-cloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+    <packaging>jar</packaging>
     <groupId>com.example</groupId>
     <artifactId>ims-eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -29,6 +30,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+         </dependency>
     </dependencies>
 
 

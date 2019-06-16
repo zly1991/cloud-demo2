@@ -13,7 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>ims-cloud</name>
     <description>Demo project for Spring Boot</description>
-
+    <packaging>pom</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,6 +32,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.0</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>
